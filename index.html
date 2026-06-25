@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Globalcons Construction</title>
+</head>
+<body>
+
+
+    <!-- the navigation bar starts here -->
+ <div class="nav-container">
+  <div class="topnav">
+
+      <div><img src="pics/Globalconslogo.png" width="200" alt=""></div>
+
+
+    <div class="topchild">
+      <div><img src="pics/time.png" alt="" width="20"></div>
+      <div>
+        <p>Monday-Friday- 08:00-20:00</p>
+        <span>Saturday & Sunday 04:00-08:00</span>
+      </div>
+    </div>
+
+    <div class="topchild">
+      <div><img src="pics/phone.jpg" alt="" width="20"></div>
+      <div>
+        <p>+233 0000000000</p>
+        <span>info@globalcons.org</span>
+      </div>
+    </div>
+
+    <div class="topchild">
+      <div><img src="pics/location.jpg" alt="" width="40"></div>
+      <div>
+        <p> Asokwa-Kumasi.</p>
+        <span>No 2 first atoom Jojo str</span>
+      </div>
+    </div>
+
+    <div class="topchild">
+      <div><img src="pics/support.png" alt="" width="20"></div>
+      <div>
+        <p>Follow Us</p>
+        <a href="https://web.facebook.com/appcodeglobal.org"><img src="pics/face.png" alt="" width="20"></a>
+        <a href="https://www.instagram.com/appcodeacademy/"><img src="pics/instagram.png" alt="" width="20"></a>
+        <a href="https://www.youtube.com/@AppCodeAcademy"><img src="pics/youtube.png" alt="" width="20"></a>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- the second nav bar starts here -->
+<div class="nav2container">
+<div class="nav2">
+  <ul class="nav2list">
+    <li><a href="index.html">Home</a>
+    </li>
+    <li><a href="#about.html" onclick="myFunction()">About Globalcons</a>
+      <div class="about" id="hide">
+        <div class="about-con">
+          <div class="ab-left">
+            <h1>Welcome To Globalcons Construction</h1>
+            <p class="pee">Everything about us is told through our products and students. Our slogan is "Carry What Matters”, which means that we’re designing products and courses with...  <a href="about.html"  id="learn-more">Click here to learn more</a></p>
+          </div>
+
+          <div class="ab-right">
+            <div><img src="pics/projectmanagement.jpg" alt=""><div>
+          </div>
+        </div>
+      </div>
+    </li>
+     <li><a href="admission.html">Services</a>
+       <div class="drop-container">
+        <div class="dropdowne">
+          <ul>
+            <li><a href="apply.html">General Construction</a></li>
+            <li><a href="admission.html">Civil Engineering</a></li>
+            <li><a href="admission.html">Infrastructure Development</a></li>
+            <li><a href="admission.html">Astro Turf & Stadium Construction</a></li>
+            <li><a href="admission.html">Real Estate Development</a></li>
+            <li><a href="admission.html">Project Management</a></li>
+          </ul>
+      </div>
+      </div>
+     </li>
+    <li><a href="">Projects</a>
+      <div class="drop-container">
+        <div class="dropdowne">
+          <ul>
+            <li><a href="learn.html">Infrastructure Projects</a></li>
+            <li><a href="learn.html">Commercial Projects</a></li>
+            <li><a href="learn.html">Astro Turf Installations</a></li>
+            <li><a href="learn.html">On-going Projects</a></li>
+          </ul>
+      </div>
+      </div>
+    <!-- <li><a href="">Why Globalcons</a>
+      <div class="drop-container">
+        <div class="dropdowne">
+          <ul>
+            <li><a href="learn.html">Our Approach</a></li>
+            <li><a href="learn.html">Quality Assurance</a></li>
+            <li><a href="learn.html">Safety Standards</a></li>
+            <li><a href="learn.html">Sustainability</a></li>
+          </ul>
+      </div>
+      </div>
+    </li> -->
+    </li>
+    <!-- <li><a href="">Our Advantage</a>
+      <div class="drop-container">
+        <div class="dropdowne">
+          <ul>
+            <li><a href="down.html">Quality</a></li>
+            <li><a href="cyber.html">Safety</a></li>
+            <li><a href="sof.html">Innovation</a></li>
+            <li><a href="cloud.html">Sustainability</a></li>           
+          </ul>
+      </div>
+      </div>
+    </li> -->
+    <li><a href="kidscode.html">Media</a></li>
+    <li><a href="gallery.html">Careers</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+  </ul>
+
+  <div class="enroll">
+    <button><a href="apply.html">Apply Now</a></button>
+  </div>
+</div>
+</div>
+
+<!-- side navigation bar starts here -->
+
+<!-- Mobile Menu Button -->
+<div class="mobile-header">
+    <img src="pics/Globalconslogo.png" alt="Logo" class="mobile-logo">
+
+    <div class="menu-btn" onclick="openMenu()">
+        ☰
+    </div>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" onclick="closeMenu()"></div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+    <div class="sidebar-top">
+        <img src="pics/Globalconslogo.png" alt="" width="180">
+        <span onclick="closeMenu()">✕</span>
+    </div>
+
+    <ul class="sidebar-menu">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li>
+            <details>
+                <summary>About Globalcons</summary>
+                <a href="#">Company Profile</a>
+                <a href="#">Leadership</a>
+                <a href="#">Vision & Mission</a>
+                <a href="#">HSE Policy</a>
+            </details>
+        </li>
+
+        <li>
+            <details>
+                <summary>Services</summary>
+                <a href="#">Construction</a>
+                <a href="#">Civil Engineering Works</a>
+                <a href="#">Astro Turf Installation</a>
+                <a href="#">Project Management</a>
+            </details>
+        </li>
+
+        <li>
+            <details>
+                <summary>Projects</summary>
+                <a href="#">Sports Infrastructure</a>
+                <a href="#">Commercial Buildings</a>
+                <a href="#">Civil Works</a>
+                <a href="#">Featured Projects</a>
+            </details>
+        </li>
+
+        <li>
+            <details>
+                <summary>Why Globalcons</summary>
+                <a href="#">Our Approach</a>
+                <a href="#">Quality Assurance</a>
+                <a href="#">Safety Standards</a>
+                <a href="#">Sustainability</a>
+            </details>
+        </li>
+
+        <li>
+            <details>
+                <summary>Our Advantage</summary>
+                <a href="#">Quality</a>
+                <a href="#">Safety</a>
+                <a href="#">Innovation</a>
+                <a href="#">Sustainability</a>
+            </details>
+        </li>
+
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact Us</a></li>
+
+    </ul>
+
+    <div class="sidebar-btn">
+        <a href="#">Get A Quote</a>
+    </div>
+
+</div>
+ 
+<!-- the hereo section begins here
+     <div class="hero-container">
+        <div class="hero-image fade active" style="background-image:linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('pics/steptodown.com412004.jpg');background-size: cover;"></div>
+        <div class="hero-image fade " style="background-image:linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('pics/steptodown.2.jpg'); background-size: cover;"></div>
+        <div class="hero-image fade" style="background-image:linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('pics/steptodown.3.jpg');background-size: cover;"></div>
+        <div class="hero-image fade" style="background-image:linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('pics/warehouseimg.jpg');background-size: cover;"></div>
+
+        <div class="hero-overlay">
+            <div>
+                <p class="trust">Ghanas trusted recuitment partner</p>
+                <h1 class="hero-text" id="hero-heading">Officially Recognized. <br> Globally Trusted.</h1>
+                <p class="hero-subtext" id="hero-paragraph">
+                Reliable Ghanaian workers delivered with structure, integrity, and speed.
+                </p>
+            <button class="hirenow hirenowfirst"><a href="#services">Industries we serve</a></button>
+            <button class="hirenow"> <a href="https://wa.me/233555072507?text=Hello%20Sasulos%20Consult%2C%20I%27m%20interested%20in%20your%20recruitment%20services.">Request workers</a></button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <section class="hero-container">
+
+    <div class="hero-image active" style="background-image:url('pics/commercial-construction-safety-degree-1.jpg')"></div>
+    <div class="hero-image" style="background-image:url('pics/brits14.jpg')"></div>
+    <div class="hero-image" style="background-image:url('pics/BRITS4.jpg')"></div>
+    <div class="hero-image" style="background-image:url('pics/earth\ moving.jpg')"></div>
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                BUILDING THE FUTURE OF INFRASTRUCTURE
+            </span>
+
+            <h1 id="hero-heading">
+                Building World-Class Sports Facilities Across Ghana
+            </h1>
+
+            <p id="hero-paragraph">
+                We design and construct high-quality astro turf pitches, sports complexes, and recreational facilities that inspire excellence and community growth.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Our Projects</a>
+                <a href="#" class="btn-secondary">Get A Quote</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- the stats section begins here -->
+
+<section class="stats-section">
+
+    <div class="stat-card">
+        <div class="icon-box">
+            🏗️
+        </div>
+
+        <h3>
+            <span class="counter" data-target="120">0</span>+
+        </h3>
+
+        <h4>Projects Delivered</h4>
+
+        <p>
+            Successfully completed construction, stadium and infrastructure projects across Ghana.
+        </p>
+
+        <a href="#">VIEW PROJECTS →</a>
+    </div>
+
+    <div class="stat-card">
+        <div class="icon-box">
+            👷
+        </div>
+
+        <h3>
+            <span class="counter" data-target="15">0</span>+
+        </h3>
+
+        <h4>Years of Experience</h4>
+
+        <p>
+            Delivering quality construction solutions with professionalism and engineering excellence.
+        </p>
+
+        <a href="#">ABOUT US →</a>
+    </div>
+
+    <div class="stat-card">
+        <div class="icon-box">
+            ⭐
+        </div>
+
+        <h3>
+            <span class="counter" data-target="98">0</span>%
+        </h3>
+
+        <h4>Client Satisfaction</h4>
+
+        <p>
+            Building strong relationships through quality workmanship and timely project delivery.
+        </p>
+
+        <a href="#">WHY CHOOSE US →</a>
+    </div>
+
+</section>
+
+
+<!-- the stats aboutsection begins here -->
+
+<section class="about-section">
+
+    <div class="about-images reveal-left">
+
+        <img src="pics/project5.jpg" class="img-main" alt="">
+
+        <!-- <img src="pics/project2.jpg" class="img-top" alt=""> -->
+
+        <img src="pics/project3.jpg" class="img-bottom" alt="">
+
+    </div>
+
+    <div class="about-content reveal-right">
+
+        <span class="section-tag">
+            ABOUT GLOBALCONS
+        </span>
+
+        <h2>
+            Building Infrastructure That Shapes Communities
+        </h2>
+
+        <p>
+            Globalcons Construction Limited is a trusted construction and
+            infrastructure company dedicated to delivering quality projects
+            that create lasting value. From stadium developments and astro
+            turf installations to commercial buildings and civil engineering
+            works, we combine innovation, expertise, and precision in every
+            project we undertake.
+        </p>
+
+        <p>
+            Our commitment to excellence, safety, and client satisfaction
+            has positioned us as a reliable partner for organizations,
+            institutions, and businesses seeking world-class construction
+            solutions.
+        </p>
+
+  
+
+        <a href="#" class="about-btn">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- the services section begins -->
+
+<section class="services-section" id="services">
+
+    <div class="services-header reveal-up">
+        <span class="section-tag">OUR SERVICES</span>
+        <h2>Comprehensive Construction & Development Solutions</h2>
+        <p>
+            From infrastructure and civil engineering to sports facilities and real estate development,
+            we deliver innovative solutions built on quality, safety and excellence.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <!-- CARD 1 -->
+        <div class="service-card reveal-up">
+            <img src="pics/generalconstruction.jpg" alt="General Construction">
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+                <!-- <div class="service-icon">🏗️</div> -->
+                <div class="service-text">
+                    <h3>General Construction</h3>
+                    <p>
+                        Delivering high-quality building and construction projects with precision,
+                        professionalism and long-term value.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="service-card reveal-up delay-1">
+            <img src="pics/civilengineering.jpg" alt="Civil Engineering">
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+                <!-- <div class="service-icon">🛣️</div> -->
+                <div class="service-text">
+                    <h3>Civil Engineering</h3>
+                    <p>
+                        Expert solutions in roads, drainage, foundations and supporting engineering works
+                        for public and private developments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="service-card reveal-up delay-2">
+            <img src="pics/infra1.jpg" alt="Infrastructure Development">
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+                <div class="service-icon">🏙️</div>
+                <div class="service-text">
+                    <h3>Infrastructure Development</h3>
+                    <p>
+                        Building essential infrastructure that supports economic growth,
+                        connectivity and long-term community development.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="service-card reveal-up">
+            <img src="pics/sports2.jpg" alt="Astro Turf & Stadium Construction">
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+                <!-- <div class="service-icon">⚽</div> -->
+                <div class="service-text">
+                    <h3>Astro Turf & Stadium Construction</h3>
+                    <p>
+                        Specialists in astro turf installation, sports facility development
+                        and stadium construction built for performance and durability.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="service-card reveal-up delay-1">
+            <img src="pics/brits14.jpg" alt="Real Estate Development">
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+                <!-- <div class="service-icon">🏢</div> -->
+                <div class="service-text">
+                    <h3>Real Estate Development</h3>
+                    <p>
+                        Creating functional, modern and sustainable real estate spaces
+                        that deliver long-term value for investors and communities.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="service-card reveal-up delay-2">
+            <img src="pics/projectmanagement.jpg" alt="Project Management">
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+                <!-- <div class="service-icon">📋</div> -->
+                <div class="service-text">
+                    <h3>Project Management</h3>
+                    <p>
+                        End-to-end planning, coordination, supervision and execution
+                        to ensure projects are delivered efficiently and successfully.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- the stats aboutsection repeats here -->
+
+<section class="about-section">
+
+        <div class="about-content reveal-right">
+
+        <span class="section-tag">
+            WHY CHOOSE GLOBALCONS
+        </span>
+
+        <h2>
+            Why Clients Trust Us To Deliver Complex Projects
+        </h2>
+
+        <p>
+            From sports facility construction and astro turf installation to civil engineering,
+            infrastructure and real estate development, we combine technical expertise,
+            disciplined execution and quality workmanship to deliver lasting value.
+        </p>
+
+        <p>
+            Our commitment to excellence, safety, and client satisfaction
+            has positioned us as a reliable partner for organizations,
+            institutions, and businesses seeking world-class construction
+            solutions.
+        </p>
+
+  
+
+        <a href="#" class="about-btn">
+            Learn More
+        </a>
+
+    </div>
+
+    <div class="about-images reveal-left">
+
+        <img src="pics/whychoosepic.jpg" class="img-main" alt="">
+
+        <!-- <img src="pics/project2.jpg" class="img-top" alt=""> -->
+
+        <img src="pics/astroturf.jpeg" class="img-bottom" alt="">
+
+    </div>
+
+
+
+</section>
+
+<!-- the process sections begins here -->
+
+<section class="process-section" id="process">
+  <div class="process-container">
+
+    <!-- Header -->
+    <div class="process-top reveal-up">
+      <div class="process-title-wrap">
+        <span class="section-tag process-tag">OUR PROCESS</span>
+        <h2>How We <span>Get It Done</span></h2>
+      </div>
+
+      <div class="process-cta">
+        <a href="contact.html" class="process-btn">
+          Let’s Build Together
+          <span class="process-btn-icon">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <div class="process-grid">
+
+      <!-- STEP 1 -->
+      <div class="process-card reveal-up">
+        <div class="step-top">
+          <span class="step-badge active-step">STEP 1</span>
+          <span class="step-arrow">➜</span>
+        </div>
+
+        <!-- <div class="process-icon">📋</div> -->
+        <h3>Consultation & Planning</h3>
+        <div class="process-line"></div>
+        <p>
+          We begin by understanding the client’s goals, project scope,
+          site requirements and delivery expectations to build a clear roadmap
+          for execution.
+        </p>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="process-card reveal-up delay-1">
+        <div class="step-top">
+          <span class="step-badge">STEP 2</span>
+          <span class="step-arrow">➜</span>
+        </div>
+
+        <!-- <div class="process-icon">🏗️</div> -->
+        <h3>Design & Construction Execution</h3>
+        <div class="process-line"></div>
+        <p>
+          Our team develops the right construction strategy and executes the
+          project with precision, quality materials and disciplined site coordination.
+        </p>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="process-card reveal-up delay-2">
+        <div class="step-top">
+          <span class="step-badge">STEP 3</span>
+        </div>
+
+        <!-- <div class="process-icon">✅</div> -->
+        <h3>Inspection, Delivery & Handover</h3>
+        <div class="process-line"></div>
+        <p>
+          We complete every project with detailed inspection, quality checks
+          and proper handover to ensure the final result meets expectations
+          and long-term performance standards.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Decorative construction image -->
+    <div class="process-excavator reveal-up">
+      <img src="pics/earth moving.jpg" alt="Construction equipment">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- the section for the featured projects begins here -->
+
+<section class="projects-section" id="projects">
+
+    <div class="projects-header reveal-up">
+        <span class="section-tag">FEATURED PROJECTS</span>
+        <h2>Proof Of Our Construction Capability</h2>
+        <p>
+            Explore selected projects that reflect our strength in sports infrastructure,
+            civil engineering, real estate development and modern construction delivery.
+        </p>
+    </div>
+
+    <!-- optional filter buttons -->
+    <div class="project-filters reveal-up">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="sports">Sports Facilities</button>
+        <button class="filter-btn" data-filter="construction">Construction</button>
+        <button class="filter-btn" data-filter="engineering">Engineering</button>
+        <button class="filter-btn" data-filter="realestate">Real Estate</button>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal-up" data-category="sports">
+            <img src="pics/astroturf.jpeg" alt="Astro Turf Project">
+            <div class="project-overlay"></div>
+
+            <div class="project-content">
+                <span class="project-badge">Sports Facility</span>
+                <h3>Kawukudi Astro Turf Pitch Development</h3>
+                <p>
+                    Professional astro turf installation designed for performance,
+                    durability and year-round sporting use.
+                </p>
+
+                <div class="project-meta">
+                    <span>⚽ Astro Turf</span>
+                    <span>📍 Ghana</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-up delay-1" data-category="sports">
+            <img src="pics/K3.jpeg" alt="Commercial Building Project">
+            <div class="project-overlay"></div>
+
+            <div class="project-content">
+                <span class="project-badge">Sports Facility</span>
+                <h3>KNUST Astro Turf Construction</h3>
+                <p>
+                    High-quality structural development executed with a focus on
+                    safety, workmanship and long-term functionality.
+                </p>
+
+                <div class="project-meta">
+                    <span>🏗 Construction</span>
+                    <span>📍 Ghana</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal-up delay-2" data-category="engineering">
+            <img src="pics/commercial-construction-safety-degree-1.jpg" alt="Civil Engineering Project">
+            <div class="project-overlay"></div>
+
+            <div class="project-content">
+                <span class="project-badge">Civil Engineering</span>
+                <h3>Infrastructure & Site Engineering Works</h3>
+                <p>
+                    Supporting infrastructure works including site preparation,
+                    structural support and technical engineering execution.
+                </p>
+
+                <div class="project-meta">
+                    <span>🛣 Engineering</span>
+                    <span>📍 Ghana</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal-up" data-category="sports">
+            <img src="pics/project-stadium.jpg" alt="Stadium Construction">
+            <div class="project-overlay"></div>
+
+            <div class="project-content">
+                <span class="project-badge">Stadium Development</span>
+                <h3>Sports Ground & Stadium Construction</h3>
+                <p>
+                    Modern sports facility construction tailored for athlete performance,
+                    spectator use and long-term durability.
+                </p>
+
+                <div class="project-meta">
+                    <span>🏟 Stadium</span>
+                    <span>📍 Ghana</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal-up delay-1" data-category="realestate">
+            <img src="pics/brits14.jpg" alt="Real Estate Development">
+            <div class="project-overlay"></div>
+
+            <div class="project-content">
+                <span class="project-badge">Real Estate</span>
+                <h3>Modern Real Estate Development</h3>
+                <p>
+                    Functional and aesthetically strong real estate projects built
+                    to meet commercial and residential development goals.
+                </p>
+
+                <div class="project-meta">
+                    <span>🏢 Real Estate</span>
+                    <span>📍 Ghana</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal-up delay-2" data-category="construction">
+            <img src="pics/BRITS3.jpg" alt="Construction Site Project">
+            <div class="project-overlay"></div>
+
+            <div class="project-content">
+                <span class="project-badge">Project Execution</span>
+                <h3>Large-Scale Construction Site Delivery</h3>
+                <p>
+                    Efficient project execution through planning, supervision and
+                    coordinated on-site management from start to completion.
+                </p>
+
+                <div class="project-meta">
+                    <span>📋 Project Delivery</span>
+                    <span>📍 Ghana</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- the projest highlight section with tecno begins here -->
+
+<section class="highlight-section" id="project-highlight">
+    <div class="highlight-wrapper">
+
+        <!-- Left Content -->
+        <div class="highlight-content reveal-up">
+            <span class="section-tag">PROJECT HIGHLIGHT</span>
+            <h2>Awarded To Deliver A Landmark Astro Turf Project</h2>
+            <p>
+                Globalcons Construction Limited was awarded a sports infrastructure project
+                in collaboration with Tecno, reinforcing our growing reputation in astro turf,
+                stadium development and quality project execution. The project reflects the trust
+                reputable organizations place in our ability to deliver durable sporting facilities
+                with professionalism, precision and long-term value.
+            </p>
+
+            <div class="highlight-points">
+                <div class="highlight-point">
+                    <span class="point-icon">✔</span>
+                    <p>Trusted by recognized organizations for major project delivery</p>
+                </div>
+
+                <div class="highlight-point">
+                    <span class="point-icon">✔</span>
+                    <p>Specialized expertise in astro turf and sports facility development</p>
+                </div>
+
+                <div class="highlight-point">
+                    <span class="point-icon">✔</span>
+                    <p>Disciplined execution backed by quality workmanship and project control</p>
+                </div>
+            </div>
+
+            <div class="highlight-actions">
+                <a href="contact.html" class="highlight-btn primary-btn">Start Your Project With Us</a>
+                <a href="#projects" class="highlight-btn secondary-btn">View More Projects</a>
+            </div>
+        </div>
+
+        <!-- Right Video -->
+        <div class="highlight-media reveal-up delay-1">
+            <div class="video-card">
+                <span class="video-badge">Awarded Contract</span>
+
+                <!-- Replace with your real video poster image -->
+                <div class="video-thumbnail">
+                    <img src="pics/tecno.png" alt="Globalcons and Tecno Astro Turf Project">
+
+                    <!-- play button -->
+                    <button class="play-btn" id="openVideoBtn">
+                        ▶
+                    </button>
+                </div>                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIDEO MODAL -->
+<div class="video-modal" id="videoModal">
+    <div class="video-modal-content">
+        <button class="close-video" id="closeVideoBtn">&times;</button>
+
+        <!-- OPTION 1: local video -->
+        <video id="projectVideo" src="Pics/tecno.mp4" controls muted>
+            <!-- <source src="Pics/tecno.mp4" type="video/mp4"> -->
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- 
+        OPTION 2: If you want YouTube/Vimeo instead, replace the video tag with iframe
+        -->
+    </div>
+</div>
+
+<!-- the call to action section begins here -->
+
+<section class="cta-section">
+  <div class="cta-overlay"></div>
+
+  <div class="cta-container reveal-up">
+    <span class="cta-tag">START YOUR NEXT PROJECT WITH CONFIDENCE</span>
+
+    <h2>Let’s Build Your <br> Next Landmark Project</h2>
+
+    <p>
+      From astro turf installations and stadium development to civil engineering,
+      infrastructure and general construction, Globalcons Construction Limited is
+      ready to deliver projects that stand strong, perform well and reflect true quality.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="contact.html" class="cta-btn primary-cta">Request A Consultation</a>
+      <a href="projects.html" class="cta-btn secondary-cta">View Our Projects</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- the footer section begins here -->
+
+<footer class="global-footer">
+  <div class="footer-top">
+    <div class="footer-container">
+
+      <!-- Column 1 -->
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="pics/globalconslogo.png" alt="Globalcons Construction Limited Logo">
+        </a>
+
+        <p>
+          Globalcons Construction Limited delivers quality construction solutions across
+          astro turf development, stadium projects, infrastructure works and general
+          civil engineering with a commitment to professionalism, durability and excellence.
+        </p>
+
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="projects.html">Featured Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-col">
+        <h3>Our Services</h3>
+        <ul class="footer-links">
+          <li><a href="#">Astro Turf Construction</a></li>
+          <li><a href="#">Stadium Development</a></li>
+          <li><a href="#">Civil Engineering Works</a></li>
+          <li><a href="#">Infrastructure Development</a></li>
+          <li><a href="#">Project Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="footer-icon">📞</span>
+            <a href="tel:+233000000000">+233 000 000 000</a>
+          </li>
+          <li>
+            <span class="footer-icon">✉️</span>
+            <a href="mailto:info@globalcons.com">info@globalcons.com</a>
+          </li>
+          <li>
+            <span class="footer-icon">📍</span>
+            <span>Asokwa, Kumasi, Ghana</span>
+          </li>
+          <li>
+            <span class="footer-icon">⏰</span>
+            <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <div class="footer-container footer-bottom-wrap">
+      <p>© 2026 Globalcons Construction Limited. All Rights Reserved.</p>
+      <p class="footer-credit">Built for Quality. Built for Performance.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<script src="js/stats.js"></script>
+ <script src="js/video.js"></script>
+ <script src="js/featuredproject.js"></script>
+<script src="js/scrolleffect.js"></script>
+<script src="js/heroslider.js"></script>
+<script src="sidebar.js"></script>
+</body>
+</html>
