@@ -1871,6 +1871,12 @@ width: 700px;
     margin-bottom: 24px;
 }
 
+@media screen and(max-width:992){
+    .footer-brand p{
+    display: none;
+}
+}
+
 .footer-socials{
     display: flex;
     gap: 12px;
@@ -2023,7 +2029,7 @@ width: 700px;
         font-size: 18px;
     }
 
-    .footer-brand p,
+   
     .footer-links a,
     .footer-contact li,
     .footer-contact a{
