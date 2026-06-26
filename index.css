@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .nav-container{
@@ -200,7 +200,11 @@ font-size: 24px;
 }
 
 #learn-more {
-  color:orange ;
+    display:block;
+  color:rgb(0, 167, 75) ;
+  border: 1px solid rgb(0, 167, 75);
+  width: 70%;
+  margin-top: 5px;
 }
 
 .ab-right{
@@ -522,11 +526,7 @@ width: 700px;
     content:'';
     position:absolute;
     inset:0;
-    background:linear-gradient(
-        to right,
-        rgba(0,0,0,.6),
-        rgba(0,0,0,.6)
-    );
+    background:linear-gradient(to right, rgba(5, 18, 32, 0.88), rgba(5, 18, 32, 0.1));
     z-index:1;
 }
 
@@ -556,10 +556,11 @@ width: 700px;
 }
 
 .hero-content h1{
-    font-size:2.5rem;
+    max-width: 850px;
+    font-size:35px;
     line-height:1.1;
     margin-bottom:20px;
-    font-weight:700;
+    font-weight:800;
 }
 
 .hero-content p{
@@ -668,7 +669,7 @@ width: 700px;
 
 .stats-section{
     position:relative;
-    bottom: 50px;
+    /* bottom: 50px; */
     z-index: 999;
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -2254,7 +2255,7 @@ width: 700px;
     bottom: 0;
     width: 52px;
     height: 3px;
-    background: #f97316;
+    background: #00a331;
     border-radius: 20px;
 }
 
@@ -2299,7 +2300,7 @@ width: 700px;
 }
 
 .footer-socials a:hover{
-    background: #f97316;
+    background: #009338;
     transform: translateY(-4px);
 }
 
@@ -2323,7 +2324,7 @@ width: 700px;
 }
 
 .footer-links a:hover{
-    color: #f97316;
+    color: #009f25;
     transform: translateX(4px);
 }
 
@@ -2344,7 +2345,7 @@ width: 700px;
 }
 
 .footer-contact a:hover{
-    color: #f97316;
+    color: #008c28;
 }
 
 .footer-icon{
@@ -2449,3 +2450,4 @@ width: 700px;
         font-size: 13px;
     }
 }
+
