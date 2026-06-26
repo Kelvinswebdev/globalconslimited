@@ -448,6 +448,12 @@ width: 700px;
     flex-wrap: wrap;
 }
 
+@media (max-width: 992px){
+    .about-hero-buttons{
+        flex-wrap: nowrap;
+    }
+    }
+
 .about-btn{
     display: inline-flex;
     align-items: center;
