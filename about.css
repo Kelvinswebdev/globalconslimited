@@ -450,7 +450,7 @@ width: 700px;
 
 @media (max-width: 992px){
     .about-hero-buttons{
-        flex-wrap: nowrap;
+        display: none;
     }
     }
 
