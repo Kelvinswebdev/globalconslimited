@@ -1,0 +1,116 @@
+
+
+/* OVERLAY */
+
+#overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:none;
+    z-index:998;
+}
+
+/* SIDEBAR */
+
+#sidebar{
+    position:fixed;
+    top:0;
+    left:-320px;
+    width:320px;
+    height:100vh;
+    background:white;
+    z-index:999;
+    transition:.4s;
+    overflow-y:auto;
+    box-shadow:5px 0 30px rgba(0,0,0,.15);
+}
+
+#sidebar.active{
+    left:0;
+}
+
+.sidebar-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    border-bottom:1px solid #eee;
+}
+
+.sidebar-top span{
+    font-size:28px;
+    cursor:pointer;
+}
+
+.sidebar-menu{
+    list-style:none;
+    padding:20px;
+}
+
+.sidebar-menu li{
+    margin-bottom:10px;
+}
+
+.sidebar-menu a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    padding:12px 0;
+    font-size:15px;
+}
+
+.sidebar-menu a:hover{
+    color:#036e1e;
+}
+
+.sidebar-menu details{
+    border-bottom:1px solid #f1f1f1;
+    padding-bottom:10px;
+}
+
+.sidebar-menu summary{
+    list-style:none;
+    cursor:pointer;
+    padding:12px 0;
+    font-weight:600;
+    color:#222;
+}
+
+.sidebar-menu summary::-webkit-details-marker{
+    display:none;
+}
+
+.sidebar-menu details a{
+    padding-left:15px;
+    color:#666;
+    font-size:14px;
+}
+
+.sidebar-btn{
+    padding:20px;
+}
+
+.sidebar-btn a{
+    display:block;
+    background:#036e1e;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    padding:15px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.sidebar-btn a:hover{
+    background:#024d15;
+}
+
+/* SHOW ONLY MOBILE */
+
+@media(min-width:993px){
+    .mobile-header,
+    #sidebar,
+    #overlay{
+        display:none;
+    }
+}
