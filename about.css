@@ -1842,7 +1842,7 @@ width: 700px;
     bottom: 0;
     width: 52px;
     height: 3px;
-    background: #00be56;
+    background: #00a331;
     border-radius: 20px;
 }
 
@@ -1887,7 +1887,7 @@ width: 700px;
 }
 
 .footer-socials a:hover{
-    background: #009439;
+    background: #009338;
     transform: translateY(-4px);
 }
 
@@ -1911,7 +1911,7 @@ width: 700px;
 }
 
 .footer-links a:hover{
-    color: #008d15;
+    color: #009f25;
     transform: translateX(4px);
 }
 
@@ -1932,7 +1932,7 @@ width: 700px;
 }
 
 .footer-contact a:hover{
-    color: #00893b;
+    color: #008c28;
 }
 
 .footer-icon{
@@ -2037,4 +2037,5 @@ width: 700px;
         font-size: 13px;
     }
 }
+
 
