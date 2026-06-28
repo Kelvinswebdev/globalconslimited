@@ -394,7 +394,7 @@ width: 700px;
     align-items: center;
     padding: 120px 20px 100px;
     background: linear-gradient(to right, rgba(5, 18, 32, 0.88), rgba(5, 18, 32, 0.1)),
-                url('pics/project5.jpg') center/cover no-repeat;
+                url('pics/general.jpg') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -425,11 +425,11 @@ width: 700px;
 }
 
 .about-hero-content h1{
-    font-size: 35px;
+    font-size: 45px;
     line-height: 1.08;
     font-weight: 800;
     margin-bottom: 22px;
-    max-width: 850px;
+    max-width: 500px;
 }
 
 .about-hero-content p{
@@ -533,3 +533,336 @@ width: 700px;
 }
 
 /* who we are section starts here */
+
+
+/*=========================================
+      GENERAL CONSTRUCTION SECTION
+==========================================*/
+
+.gc-about{
+    padding:120px 8%;
+    background:#fff;
+    overflow:hidden;
+}
+
+.gc-container{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+/*=========================================
+            LEFT IMAGES
+==========================================*/
+
+.gc-images{
+    position:relative;
+    height:720px;
+}
+
+.img-one,
+.img-two{
+    overflow:hidden;
+    border-radius:12px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+.img-one{
+    position:absolute;
+    top:0;
+    left:0;
+    width:55%;
+    height:430px;
+}
+
+.img-two{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:72%;
+    height:430px;
+}
+
+.img-one img,
+.img-two img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.img-one:hover img,
+.img-two:hover img{
+    transform:scale(1.08);
+}
+
+/*=========================================
+        EXPERIENCE BOX
+==========================================*/
+
+.experience-box{
+    position:absolute;
+    top:40px;
+    right:20px;
+    width:260px;
+    background:#F4A51C;
+    color:#fff;
+    padding:40px;
+    z-index:20;
+    border-radius:8px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.experience-box h2{
+    font-size:58px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.experience-box span{
+    font-size:22px;
+    font-weight:600;
+    line-height:1.5;
+}
+
+/*=========================================
+            CONTENT
+==========================================*/
+
+.gc-content .section-subtitle{
+    display:inline-block;
+    font-size:14px;
+    font-weight:700;
+    color:#036E1E;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.gc-content h2{
+    font-size:56px;
+    line-height:1.15;
+    color:#0B2B52;
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+.quote-line{
+    border-left:5px solid #F4A51C;
+    padding-left:20px;
+    margin-bottom:35px;
+}
+
+.quote-line p{
+    font-size:21px;
+    line-height:1.8;
+    color:#38527A;
+}
+
+.gc-content > p{
+    font-size:17px;
+    line-height:2;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.gc-btn{
+    display:inline-block;
+    background:#036E1E;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 38px;
+    border-radius:6px;
+    transition:.35s;
+    font-weight:600;
+}
+
+.gc-btn:hover{
+    background:#F4A51C;
+    transform:translateY(-4px);
+}
+
+/*=========================================
+        LARGE TABLETS
+==========================================*/
+
+@media(max-width:1200px){
+
+.gc-container{
+    gap:60px;
+}
+
+.gc-content h2{
+    font-size:46px;
+}
+
+.gc-images{
+    height:650px;
+}
+
+.img-one{
+    height:380px;
+}
+
+.img-two{
+    height:380px;
+}
+
+}
+
+/*=========================================
+            TABLETS
+==========================================*/
+
+@media(max-width:992px){
+
+.gc-container{
+    grid-template-columns:1fr;
+    gap:60px;
+}
+
+.gc-images{
+    height:650px;
+    max-width:700px;
+    margin:auto;
+}
+
+.gc-content{
+    text-align:center;
+}
+
+.gc-content h2{
+    font-size:42px;
+}
+
+.quote-line{
+    border-left:none;
+    border-top:5px solid #F4A51C;
+    padding-left:0;
+    padding-top:20px;
+}
+
+.gc-btn{
+    margin:auto;
+}
+
+}
+
+/*=========================================
+            MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.gc-about{
+    padding:80px 20px;
+}
+
+.gc-images{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    gap:20px;
+}
+
+.img-one,
+.img-two{
+    position:relative;
+    width:100%;
+    height:260px;
+}
+
+.experience-box{
+    position:relative;
+    width:100%;
+    top:0;
+    right:0;
+    order:2;
+    text-align:center;
+    padding:25px;
+}
+
+.img-one{
+    order:1;
+}
+
+.img-two{
+    order:3;
+}
+
+.gc-content{
+    text-align:left;
+}
+
+.gc-content h2{
+    font-size:32px;
+}
+
+.quote-line{
+    border-top:none;
+    border-left:4px solid #F4A51C;
+    padding-top:0;
+    padding-left:18px;
+}
+
+.quote-line p{
+    font-size:18px;
+}
+
+.gc-content > p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.gc-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+}
+
+}
+
+/*=========================================
+        SMALL PHONES
+==========================================*/
+
+@media(max-width:480px){
+
+.gc-about{
+    padding:70px 18px;
+}
+
+.gc-content h2{
+    font-size:27px;
+    line-height:1.3;
+}
+
+.gc-content > p{
+    font-size:15px;
+}
+
+.quote-line p{
+    font-size:16px;
+}
+
+.experience-box{
+    padding:20px;
+}
+
+.experience-box h2{
+    font-size:38px;
+}
+
+.experience-box span{
+    font-size:18px;
+}
+
+.img-one,
+.img-two{
+    height:220px;
+}
+
+}
