@@ -385,3 +385,151 @@ width: 700px;
 
 
 /* the styling for the hero starts here */
+
+
+.about-hero{
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 20px 100px;
+    background: linear-gradient(to right, rgba(5, 18, 32, 0.88), rgba(5, 18, 32, 0.1)),
+                url('pics/project5.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.about-hero-overlay{
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at top right, rgba(249,115,22,0.18), transparent 28%),
+      radial-gradient(circle at bottom left, rgba(34,197,94,0.12), transparent 24%);
+    z-index: 1;
+}
+
+.about-hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.about-tag{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f97316;
+    margin-bottom: 18px;
+}
+
+.about-hero-content h1{
+    font-size: 35px;
+    line-height: 1.08;
+    font-weight: 800;
+    margin-bottom: 22px;
+    max-width: 850px;
+}
+
+.about-hero-content p{
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.86);
+    margin-bottom: 32px;
+}
+
+.about-hero-buttons{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px){
+    .about-hero-buttons{
+        display: none;
+    }
+    }
+
+
+.about-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.35s ease;
+}
+
+.primary-about-btn{
+    background: #ffcc00;
+    color: #fff;
+    box-shadow: 0 15px 35px rgba(249,115,22,0.28);
+}
+
+.primary-about-btn:hover{
+    background: #00a035;
+    transform: translateY(-3px);
+}
+
+.secondary-about-btn{
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    backdrop-filter: blur(6px);
+}
+
+.secondary-about-btn:hover{
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-3px);
+}
+
+/* responsive */
+@media (max-width: 1100px){
+    .about-hero-content{
+        margin-left: 20px;
+    }
+
+    .about-hero-content h1{
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 768px){
+    .about-hero{
+        min-height: 72vh;
+        padding: 100px 16px 70px;
+        background-position: center;
+    }
+
+    .about-hero-content{
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .about-tag{
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .about-hero-content h1{
+        font-size: 31px;
+        line-height: 1.18;
+    }
+
+    .about-hero-content p{
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-btn{
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* who we are section starts here */
