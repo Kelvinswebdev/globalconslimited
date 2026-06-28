@@ -866,3 +866,473 @@ width: 700px;
 }
 
 }
+
+/* the next section begins here */
+
+/*====================================
+        SERVICES GRID
+=====================================*/
+
+/*======================================
+      GENERAL CONSTRUCTION SERVICES
+======================================*/
+/*====================================
+        SERVICES GRID
+=====================================*/
+
+/*=============================
+    CAPABILITIES
+==============================*/
+
+.gc-capabilities{
+
+    background:#f6f8fb;
+
+    padding:110px 8%;
+
+}
+
+.gc-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+/* LEFT */
+
+.gc-intro{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding-right:40px;
+
+}
+
+.gc-tag{
+
+    color:#036E1E;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.gc-intro h2{
+
+    font-size:15px;
+
+    color:#0B2B52;
+
+    line-height:1.15;
+
+    margin:20px 0;
+
+}
+
+.gc-intro p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.gc-btn{
+
+    width:fit-content;
+
+    padding:18px 38px;
+
+    background:#F4A51C;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.gc-btn:hover{
+
+    background:#036E1E;
+
+}
+
+/* CARD */
+
+.gc-card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.gc-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    background:#FFF5E3;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+}
+
+.gc-card h3{
+
+    color:#0B2B52;
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+}
+
+.gc-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.gc-card a{
+
+    color:#036E1E;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* SECOND ROW */
+
+.gc-bottom{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+/*==========================================
+        LARGE DESKTOPS
+==========================================*/
+
+@media (max-width:1400px){
+
+.gc-capabilities{
+    padding:100px 6%;
+}
+
+.gc-container,
+.gc-bottom{
+    max-width:1200px;
+}
+
+.gc-intro h2{
+    font-size:48px;
+}
+
+.gc-card{
+    padding:35px 25px;
+}
+
+.gc-card h3{
+    font-size:22px;
+}
+
+}
+
+
+/*==========================================
+            LAPTOPS
+==========================================*/
+
+@media (max-width:1200px){
+
+.gc-container{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.gc-intro{
+
+    grid-column:1 / -1;
+
+    text-align:center;
+
+    padding-right:0;
+
+    margin-bottom:15px;
+
+}
+
+.gc-intro h2{
+
+    font-size:44px;
+
+}
+
+.gc-btn{
+
+    margin:auto;
+
+}
+
+.gc-bottom{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+}
+
+
+/*==========================================
+            TABLETS
+==========================================*/
+
+@media (max-width:992px){
+
+.gc-capabilities{
+
+    padding:90px 5%;
+
+}
+
+.gc-intro h2{
+
+    font-size:38px;
+
+}
+
+.gc-intro p{
+
+    font-size:16px;
+
+}
+
+.gc-card{
+
+    padding:30px 22px;
+
+}
+
+.gc-card h3{
+
+    font-size:21px;
+
+}
+
+.gc-card p{
+
+    font-size:15px;
+
+}
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    font-size:30px;
+
+}
+
+}
+
+
+/*==========================================
+            MOBILE
+==========================================*/
+
+@media (max-width:768px){
+
+.gc-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.gc-bottom{
+
+    grid-template-columns:1fr;
+
+}
+
+.gc-intro{
+
+    text-align:left;
+
+}
+
+.gc-intro h2{
+
+    font-size:32px;
+
+}
+
+.gc-intro p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+.gc-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.gc-card{
+
+    padding:30px 20px;
+
+}
+
+.gc-card h3{
+
+    font-size:20px;
+
+}
+
+}
+
+
+/*==========================================
+        SMALL PHONES
+==========================================*/
+
+@media (max-width:480px){
+
+.gc-capabilities{
+
+    padding:70px 20px;
+
+}
+
+.gc-tag{
+
+    font-size:13px;
+
+}
+
+.gc-intro h2{
+
+    font-size:28px;
+
+    line-height:1.25;
+
+}
+
+.gc-intro p{
+
+    font-size:14px;
+
+}
+
+.gc-card{
+
+    padding:25px 18px;
+
+}
+
+.gc-card h3{
+
+    font-size:19px;
+
+}
+
+.gc-card p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.icon{
+
+    width:65px;
+
+    height:65px;
+
+    font-size:26px;
+
+}
+
+.gc-btn{
+
+    padding:16px;
+
+}
+
+}
