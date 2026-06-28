@@ -926,7 +926,7 @@ width: 700px;
 
     color:#036E1E;
 
-    font-weight:700;
+    /* font-weight:700; */
 
     letter-spacing:2px;
 
@@ -934,11 +934,11 @@ width: 700px;
 
 }
 
-.gc-intro h2{
+#gcintoheader{
 
-    font-size:5px;
+    font-size:35px;
 
-    color:#920e24;
+    color:#232431;
 
     line-height:1.15;
 
@@ -1004,28 +1004,46 @@ width: 700px;
 
 .icon{
 
-    width:80px;
+    width:85px;
+    height:85px;
 
-    height:80px;
+    margin:0 auto 25px;
 
-    margin:auto;
-
-    margin-bottom:25px;
-
-    background:#FFF5E3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     border-radius:50%;
 
-    display:flex;
+    background:#FFF4DD;
 
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:34px;
+    transition:.4s;
 
 }
 
+.icon i{
+
+    font-size:38px;
+
+    color:#F4A51C;
+
+    transition:.4s;
+
+}
+
+.gc-card:hover .icon{
+
+    background:#036E1E;
+
+    transform:rotate(8deg) scale(1.05);
+
+}
+
+.gc-card:hover .icon i{
+
+    color:#fff;
+
+}
 .gc-card h3{
 
     color:#0B2B52;
@@ -1334,5 +1352,190 @@ width: 700px;
     padding:16px;
 
 }
+
+}
+
+
+/* why choose our company section begins here */
+
+/*==========================================
+        WHY GLOBALCONS
+==========================================*/
+
+.why-globalcons{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    min-height:750px;
+
+}
+
+/* LEFT */
+
+.why-image{
+
+    overflow:hidden;
+
+}
+
+.why-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.8s;
+
+}
+
+.why-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* RIGHT */
+
+.why-content{
+
+    background:#0B2B52;
+
+    color:#fff;
+
+    padding:90px 70px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+/* Blueprint Background */
+
+.why-content::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:url("pics/earth\ moving.jpg");
+
+    background-size:cover;
+
+    opacity:.06;
+
+    pointer-events:none;
+
+}
+
+.why-content>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.why-tag{
+
+    color:#F4A51C;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.why-content h2{
+
+    font-size:24px;
+
+    line-height:1.2;
+
+    margin:25px 0;
+
+}
+
+.why-content p{
+
+    line-height:1.6;
+
+    color:#d6dce6;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+}
+
+/* LIST */
+
+.why-list{
+
+    display:grid;
+
+    gap:15px;
+
+    margin-bottom:45px;
+
+}
+
+.why-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    font-size:14px;
+
+}
+
+.why-item i{
+
+    color:#F4A51C;
+
+    font-size:14px;
+
+}
+
+/* BUTTON */
+
+.why-btn{
+
+    display:inline-block;
+
+    width:fit-content;
+
+    padding:18px 38px;
+
+    background:#F4A51C;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.why-btn:hover{
+
+    background:#036E1E;
 
 }
