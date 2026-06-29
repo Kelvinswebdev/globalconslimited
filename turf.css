@@ -378,3 +378,394 @@ width: 700px;
 
 
 /* the styling for the hero content begins here */
+
+/*=========================================
+        ASTRO HERO
+==========================================*/
+
+/*=========================================
+        ASTRO HERO
+=========================================*/
+
+.astro-hero{
+
+    position:relative;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/*=============================
+VIDEO
+==============================*/
+
+.astro-hero video{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transform:scale(1.15);
+
+    animation:videoZoom 18s linear infinite alternate;
+
+}
+
+@keyframes videoZoom{
+
+from{
+
+transform:scale(1.1);
+
+}
+
+to{
+
+transform:scale(1.25);
+
+}
+
+}
+
+/*=============================
+OVERLAY
+==============================*/
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(2,20,40,.90),
+        rgba(2,20,40,.55),
+        rgba(2,20,40,.35)
+    );
+
+}
+
+/*=============================
+BLUEPRINT GRID
+==============================*/
+
+.hero-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+
+    background-size:60px 60px;
+
+    opacity:.25;
+
+}
+
+/*=============================
+DECORATION
+==============================*/
+
+.hero-circle{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    right:-250px;
+
+    top:-120px;
+
+}
+
+.hero-square{
+
+    position:absolute;
+
+    width:90px;
+
+    height:90px;
+
+    background:#F4A51C;
+
+    opacity:.15;
+
+    right:12%;
+
+    bottom:15%;
+
+    animation:float 6s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+}
+
+/*=============================
+CONTENT
+==============================*/
+
+.hero-content{
+
+    position:relative;
+
+    z-index:20;
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    color:white;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:12px 20px;
+
+    background:rgba(244,165,28,.15);
+
+    border:1px solid rgba(244,165,28,.3);
+
+    color:#F4A51C;
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content h1{
+
+    font-size:34px;
+
+    line-height:1.05;
+
+    max-width:900px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-content h1 span{
+
+    color:#F4A51C;
+
+}
+
+.hero-content p{
+
+    max-width:700px;
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#ddd;
+
+    margin-bottom:45px;
+
+}
+
+/*=============================
+BUTTONS
+==============================*/
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.hero-btn{
+
+padding:18px 40px;
+
+background:#F4A51C;
+
+color:white;
+
+text-decoration:none;
+
+transition:.4s;
+
+}
+
+.hero-btn:hover{
+
+background:#036E1E;
+
+}
+
+.hero-btn-outline{
+
+padding:18px 40px;
+
+border:2px solid white;
+
+color:white;
+
+text-decoration:none;
+
+transition:.4s;
+
+}
+
+.hero-btn-outline:hover{
+
+background:white;
+
+color:#0B2B52;
+
+}
+
+@media(max-width:1400px){
+
+.hero-content h1{
+
+font-size:70px;
+
+}
+
+}
+
+@media(max-width:1200px){
+
+.hero-content h1{
+
+font-size:58px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.hero-content{
+
+text-align:center;
+
+}
+
+.hero-content h1{
+
+font-size:46px;
+
+margin:auto auto 25px;
+
+}
+
+.hero-content p{
+
+margin:auto auto 40px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-circle{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.astro-hero{
+
+height:auto;
+
+padding:130px 20px 90px;
+
+}
+
+.hero-content h1{
+
+font-size:36px;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-btn,
+
+.hero-btn-outline{
+
+width:100%;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-content h1{
+
+font-size:30px;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+}
+
+}
