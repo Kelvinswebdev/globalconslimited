@@ -444,7 +444,7 @@ width: 700px;
 
 .civil-container h1{
 
-    font-size:72px;
+    font-size:35px;
 
     max-width:850px;
 
@@ -456,15 +456,15 @@ width: 700px;
 
 .civil-container p{
 
-    font-size:20px;
+    font-size:16px;
 
     max-width:720px;
 
-    line-height:1.9;
+    line-height:1.6;
 
     color:#ddd;
 
-    margin-bottom:45px;
+    margin-bottom:25px;
 
 }
 
