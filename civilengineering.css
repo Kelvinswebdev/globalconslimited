@@ -385,3 +385,135 @@ width: 700px;
 
 
 /* the styling for the hero starts here */
+
+/*======================================
+        CIVIL HERO
+======================================*/
+
+.civil-hero{
+
+    height:90vh;
+
+    background:url("pics/civil-hero.jpg") center/cover;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,33,66,.72);
+
+}
+
+.civil-container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:85%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    color:#fff;
+
+}
+
+.hero-tag{
+
+    color:#F4A51C;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+}
+
+.civil-container h1{
+
+    font-size:72px;
+
+    max-width:850px;
+
+    line-height:1.1;
+
+    margin:25px 0;
+
+}
+
+.civil-container p{
+
+    font-size:20px;
+
+    max-width:720px;
+
+    line-height:1.9;
+
+    color:#ddd;
+
+    margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    background:#036E1E;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    transition:.4s;
+
+}
+
+.btn-primary:hover{
+
+    background:#F4A51C;
+
+}
+
+.btn-secondary{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    transition:.4s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#fff;
+
+    color:#0B2B52;
+
+}
