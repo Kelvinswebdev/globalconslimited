@@ -885,7 +885,159 @@ border-radius:10px;
 /*=========================================
         ESTATE STORY
 ==========================================*/
+/*=========================================
+        PROJECT CTA
+==========================================*/
 
+.project-cta{
+
+    padding:140px 8%;
+
+    background:#036E1E;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+    top:-220px;
+
+    right:-220px;
+
+}
+
+.project-cta::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.03);
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+.cta-container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.cta-container .section-tag{
+
+    color:#F4A51C;
+
+}
+
+.cta-container h2{
+
+    font-size:60px;
+
+    color:white;
+
+    margin:25px 0;
+
+    line-height:1.15;
+
+}
+
+.cta-container p{
+
+    color:#e9e9e9;
+
+    line-height:2;
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.cta-btn{
+
+    padding:18px 42px;
+
+    background:#F4A51C;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.cta-btn:hover{
+
+    background:#fff;
+
+    color:#036E1E;
+
+}
+
+.cta-outline{
+
+    padding:18px 42px;
+
+    border:2px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.cta-outline:hover{
+
+    background:white;
+
+    color:#036E1E;
+
+}
 
 
 /* #################################################################### */
