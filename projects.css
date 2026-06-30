@@ -624,6 +624,264 @@ SCROLL
 
 /* the next section beginshere */
 
+
+/*=========================================
+        PROJECT GALLERY
+==========================================*/
+
+.project-gallery{
+
+    padding:140px 8%;
+
+    background:#fff;
+
+}
+
+.gallery-heading{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:70px;
+
+}
+
+.gallery-heading h2{
+
+    font-size:56px;
+
+    color:#0B2B52;
+
+    margin-top:20px;
+
+}
+
+.gallery-grid{
+
+    max-width:1500px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    grid-auto-rows:220px;
+
+    gap:18px;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    position:relative;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.8s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Different Sizes */
+
+.large{
+
+    grid-column:span 2;
+
+    grid-row:span 2;
+
+}
+
+.tall{
+
+    grid-row:span 2;
+
+}
+
+.wide{
+
+    grid-column:span 2;
+
+}
+
+
+
+/*====================================
+1400px
+====================================*/
+
+@media(max-width:1400px){
+
+.gallery-heading h2{
+
+font-size:50px;
+
+}
+
+}
+
+/*====================================
+1200px
+====================================*/
+
+@media(max-width:1200px){
+
+.project-gallery{
+
+padding:120px 6%;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.large{
+
+grid-column:span 2;
+
+}
+
+}
+
+/*====================================
+992px
+====================================*/
+
+@media(max-width:992px){
+
+.project-gallery{
+
+padding:100px 5%;
+
+}
+
+.gallery-heading h2{
+
+font-size:42px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+grid-auto-rows:200px;
+
+}
+
+.large,
+.wide{
+
+grid-column:span 2;
+
+}
+
+}
+
+/*====================================
+768px
+====================================*/
+
+@media(max-width:768px){
+
+.project-gallery{
+
+padding:80px 20px;
+
+}
+
+.gallery-heading{
+
+margin-bottom:50px;
+
+}
+
+.gallery-heading h2{
+
+font-size:34px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+grid-auto-rows:260px;
+
+}
+
+.large,
+.wide,
+.tall{
+
+grid-column:auto;
+
+grid-row:auto;
+
+}
+
+}
+
+/*====================================
+480px
+====================================*/
+
+@media(max-width:480px){
+
+.project-gallery{
+
+padding:70px 18px;
+
+}
+
+.gallery-heading h2{
+
+font-size:28px;
+
+}
+
+.gallery-grid{
+
+grid-auto-rows:220px;
+
+gap:12px;
+
+}
+
+.gallery-item{
+
+border-radius:10px;
+
+}
+
+}
+
 /*=========================================
         ESTATE STORY
 ==========================================*/
